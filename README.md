@@ -1,6 +1,6 @@
 # 🏥 Healthcare Backend API
 
-A secure and scalable backend system for managing patients, doctors, and their assignments — built using **Django**, **Django REST Framework**, and **PostgreSQL**, with robust **JWT Authentication**.
+A secure and scalable backend system for managing patients, doctors, and their assignments — built using Django, Django REST Framework, and PostgreSQL, with robust JWT Authentication.
 
 ---
 
@@ -20,42 +20,36 @@ A secure and scalable backend system for managing patients, doctors, and their a
 
 ```text
 HealthCare/
-├── accounts/            # User Auth & JWT logic
-├── doctors/             # Doctor management
-├── patients/            # Patient management
-├── mappings/            # Doctor-Patient relationship logic
-├── health/              # Core project settings (settings.py, urls.py)
-├── .env                 # Private environment variables (Ignored by Git)
-├── .env.example         # Template for environment variables
-├── requirements.txt     # Python dependencies
-├── manage.py            # Django CLI
-└── README.md            # Project documentation
+├── accounts/          
+├── doctors/           
+├── patients/          
+├── mappings/            
+├── health/          
+├── .env                 
+├── .env.example         
+├── requirements.txt     
+├── manage.py            
+└── README.md   
 
 🚀 Getting Started
 🧱 Prerequisites
 
 Python 3.13.7
-
 PostgreSQL
-
 Git
 
 ⚙️ Installation
+
 1️⃣ Clone the repository
 git clone https://github.com/Harshit-py13/healthcare-backend-api.git
 cd healthcare-backend-api
 
 2️⃣ Create and activate a virtual environment
 python -m venv env
-
-
 Windows:
-
 env\Scripts\activate
 
-
 Mac/Linux:
-
 source env/bin/activate
 
 3️⃣ Install dependencies
@@ -76,40 +70,32 @@ DB_PASSWORD=your_password
 DB_HOST=127.0.0.1
 DB_PORT=5432
 
-
 You can use .env.example as a reference.
 
 🗄️ Database Migration
 
 Run migrations:
-
 python manage.py makemigrations
 python manage.py migrate
 
 ▶️ Run the Server
 python manage.py runserver
 
-
 Server will run at:
-
 http://127.0.0.1:8000/
 
 🔐 Authentication (JWT)
 Register User
 
 POST
-
 /api/auth/register/
 
 Login User
 
 POST
-
 /api/auth/login/
 
-
 After login, copy the access token and include it in headers:
-
 Authorization: Bearer <your_access_token>
 
 📮 API Endpoints
@@ -136,9 +122,7 @@ Authorization: Bearer <your_access_token>
 🧪 Testing APIs
 
 You can test all APIs using:
-
 Thunder Client (VS Code Extension)
-
 Postman
 
 🧑‍💻 Author
