@@ -29,3 +29,26 @@ HealthCare/
 ├── requirements.txt     # Python dependencies
 ├── manage.py            # Django CLI
 └── README.md            # Project documentation
+
+---
+
+🚀 Getting Started
+🧱 Prerequisites
+Python 3.13.7
+PostgreSQL
+pip
+Git
+
+⚙️ Installation
+# Clone the Repository
+git clone https://github.com/Harshit-py13/healthcare-backend-api.git
+cd healthcare-backend-api
+
+# Create and Activate Virtual Environment
+python -m venv env
+env\Scripts\activate       # Windows
+# source env/bin/activate  # Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
