@@ -117,8 +117,73 @@ Request Body
 ```
 
 📌 Use Token in Headers for Protected APIs
-Authorization: Bearer <access_token>
+ ```text  Authorization: Bearer <access_token> ```
 
+---
+
+📮 API Endpoints
+
+| Method | Endpoint                             | Description                      | Auth |
+| ------ | ------------------------------------ | -------------------------------- | ---- |
+| POST   | `/api/auth/register/`                | Register new user                | ❌    |
+| POST   | `/api/auth/login/`                   | Login and get JWT token          | ❌    |
+| POST   | `/api/patients/`                     | Add a new patient                | ✅    |
+| GET    | `/api/patients/`                     | List all patients                | ✅    |
+| GET    | `/api/patients/<id>/`                | View patient details             | ✅    |
+| PUT    | `/api/patients/<id>/`                | Update patient details           | ✅    |
+| DELETE | `/api/patients/<id>/`                | Delete patient                   | ✅    |
+| POST   | `/api/doctors/`                      | Add a doctor                     | ✅    |
+| GET    | `/api/doctors/`                      | Get all doctors                  | ✅    |
+| GET    | `/api/doctors/<id>/`                 | View doctor details              | ✅    |
+| PUT    | `/api/doctors/<id>/`                 | Update doctor info               | ✅    |
+| DELETE | `/api/doctors/<id>/`                 | Delete doctor                    | ✅    |
+| POST   | `/api/mappings/`                     | Assign doctor to patient         | ✅    |
+| GET    | `/api/mappings/`                     | View all mappings                | ✅    |
+| GET    | `/api/mappings/<patient_id>/`        | View doctors assigned to patient | ✅    |
+| DELETE | `/api/mappings/delete/<mapping_id>/` | Remove doctor-patient mapping    | ✅    |
+
+---
+
+🛡️ Admin Panel
+
+📌 Django Admin:
+
+ ```text http://127.0.0.1:8000/admin/ ```
+
+Login using your superuser credentials.
+
+---
+
+🌍 Environment Variables
+
+Your .env file should contain:
+ ```text
+ SECRET_KEY=your-secret-key
+ DEBUG=True
+
+ DB_NAME=healthcare_db
+ DB_USER=postgres
+ DB_PASSWORD=your_password
+ DB_HOST=127.0.0.1
+ DB_PORT=5432
+ ```
+
+---
+
+✨ Future Enhancements
+
+✅ Swagger / ReDoc API Documentation
+✅ Role-based Access (Admin / Doctor / User)
+✅ Pagination & Filtering
+✅ Email Verification
+✅ Docker Support
+
+---
+
+👨‍💻 Author
+
+Harshit Tiwari
+GitHub: Harshit-py13
 
 
 
