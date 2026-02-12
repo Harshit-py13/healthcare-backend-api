@@ -35,13 +35,9 @@ HealthCare/
 🚀 Getting Started
 
 🧱 Prerequisites
-
 Python 3.13.7
-
 PostgreSQL
-
 pip
-
 Git
 
 ⚙️ Installation
