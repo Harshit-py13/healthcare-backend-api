@@ -187,7 +187,8 @@ Your .env file should contain:
 👨‍💻 Author
 
 Harshit Tiwari
-GitHub: Harshit-py13
+
+GitHub: https://github.com/Harshit-py13
 
 
 
