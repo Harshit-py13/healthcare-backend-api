@@ -58,3 +58,39 @@ env\Scripts\activate       # Windows
 # Install dependencies
 pip install -r requirements.txt
 ```
+---
+
+🗝️ Configure Environment Variables
+
+Create a .env file in the root directory and add your PostgreSQL credentials.
+
+Use .env.example as reference.
+```text
+# .env.example
+SECRET_KEY=your-secret-key
+DEBUG=True
+
+DB_NAME=healthcare_db
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_HOST=127.0.0.1
+DB_PORT=5432
+
+# Run Migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# Create Superuser (Optional)
+python manage.py createsuperuser
+
+# Start the Server
+python manage.py runserver
+
+# Server will run at:
+  http://127.0.0.1:8000/
+
+
+
+
+
+
