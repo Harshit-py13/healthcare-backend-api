@@ -18,18 +18,17 @@ A secure and scalable backend system for managing patients, doctors, and their a
 
 ## 📁 Project Structure
 
-```text
 HealthCare/
-├── accounts/          
-├── doctors/           
-├── patients/          
-├── mappings/            
-├── health/          
-├── .env                 
-├── .env.example         
-├── requirements.txt     
-├── manage.py            
-└── README.md   
+├── accounts/      # Auth & JWT
+├── patients/      # Patient CRUD
+├── doctors/       # Doctor CRUD
+├── mappings/      # Doctor-Patient Mapping
+├── health/        # Settings & URLs
+├── manage.py
+├── requirements.txt
+├── .env.example
+└── README.md
+  
 
 🚀 Getting Started
 🧱 Prerequisites
