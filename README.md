@@ -88,6 +88,36 @@ python manage.py runserver
 
 # Server will run at:
   http://127.0.0.1:8000/
+```
+---
+
+🔐 Authentication (JWT)
+Register
+
+POST /api/auth/register/
+
+```text
+{
+  "name": "Harshit Tiwari",
+  "email": "harshit@gmail.com",
+  "password": "Har@#4321"
+}
+```
+
+Login
+
+POST /api/auth/login/
+
+```text
+Request Body
+{
+  "email": "harshit@gmail.com",
+  "password": "Har@#4321"
+}
+```
+
+📌 Use Token in Headers for Protected APIs
+Authorization: Bearer <access_token>
 
 
 
