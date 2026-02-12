@@ -172,10 +172,14 @@ Your .env file should contain:
 
 ✨ Future Enhancements
 
-✅ Swagger / ReDoc API Documentation
-✅ Role-based Access (Admin / Doctor / User)
+✅ Swagger / ReDoc API Documentation 
+
+✅ Role-based Access (Admin / Doctor / User) 
+
 ✅ Pagination & Filtering
+
 ✅ Email Verification
+
 ✅ Docker Support
 
 ---
