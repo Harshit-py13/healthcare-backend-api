@@ -29,7 +29,7 @@ HealthCare/
 ├── requirements.txt     # Python dependencies
 ├── manage.py            # Django CLI
 └── README.md            # Project documentation
-...
+```
 ---
 
 🚀 Getting Started
