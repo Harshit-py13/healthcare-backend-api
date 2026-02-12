@@ -18,6 +18,8 @@ A secure and scalable backend system for managing patients, doctors, and their a
 
 ## 📁 Project Structure
 
+```text
+
 HealthCare/
 ├── accounts/            # User Auth & JWT logic
 ├── doctors/             # Doctor management
